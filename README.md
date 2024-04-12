@@ -27,3 +27,20 @@ The system will scan the participants credential to permit their entrance in the
 
 - [ ] Check-in should be facilitated via QR code.
 
+
+---
+## Anotations:
+
+Request Body
+Search Params (Search Params / Query Params) `http://localhost:3333/users?name=Fred`
+Route Params -> Identification of resoucers `DELETE http://localhost:3333/users/3`
+Headers -> Context
+
+Native Driver / Query Builder / ORMs (Object Relational Mapping)
+
+20x => Success
+30x => Redirect
+40x => Client Error
+50x => Server Error
+
+
