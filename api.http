@@ -3,23 +3,29 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Individual Event",
-  "details": null,
-  "maximumAttendees": 1
+  "title": "Global Event",
+  "details": "global summit",
+  "maximumAttendees": 100
 }
 
 ###
 
 # Registers the user for an event
-POST http://localhost:3333/events/216809a8-af5f-47c5-b842-5d31f7ac5a21/attendees
+POST http://localhost:3333/events/d4b915fa-72d4-44a6-9e8f-936c58741b8e/attendees
 Content-Type: application/json
 
 {
   "name": "John Doe",
-  "email": "jd@test.com"
+  "email": "jd23@test.com"
 }
 
 ###
 
 # Fetch a specific event
-GET http://localhost:3333/events/216809a8-af5f-47c5-b842-5d31f7ac5a21
+GET http://localhost:3333/events/591c3104-afa5-4ed1-bf53-64a90e59d127
+
+###
+
+#Fetch attendee event badge
+GET http://localhost:3333/attendees/7/badge
+
