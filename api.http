@@ -2,9 +2,17 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite summit new born baby",
+  "title": "Unite summit 3",
   "details": "An event for programming lovers",
   "maximumAttendees": 100
 }
 
+###
 
+POST http://localhost:3333/events/1fc137b4-4ca3-4ac3-8e91-30b5ffc26179/attendees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "jd@test.com"
+}
