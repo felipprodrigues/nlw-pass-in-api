@@ -1,4 +1,3 @@
-import { app } from '../server'
 import { prisma } from '../lib/prisma'
 import { z } from 'zod'
 import { ZodTypeProvider } from "fastify-type-provider-zod"

@@ -1,3 +1,4 @@
+# Fetches all event records
 POST http://localhost:3333/events
 Content-Type: application/json
 
@@ -9,6 +10,7 @@ Content-Type: application/json
 
 ###
 
+# Registers the user for an event
 POST http://localhost:3333/events/216809a8-af5f-47c5-b842-5d31f7ac5a21/attendees
 Content-Type: application/json
 
@@ -16,3 +18,8 @@ Content-Type: application/json
   "name": "John Doe",
   "email": "jd@test.com"
 }
+
+###
+
+# Fetch a specific event
+GET http://localhost:3333/events/216809a8-af5f-47c5-b842-5d31f7ac5a21
